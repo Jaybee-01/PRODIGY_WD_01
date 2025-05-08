@@ -1,13 +1,3 @@
-// Change nav style on scroll
-window.addEventListener("scroll", () => {
-  const navbar = document.getElementById("navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-
 // Handling the get started button
 function handleGetStarted() {
   alert("Welcome to Jay's official web Company, We will be in touch soon");
