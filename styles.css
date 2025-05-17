@@ -58,12 +58,18 @@ nav a {
   input {
     padding: 8px;
   }
-   
+
   button {
     width: 200px;
     padding: 10px;
     margin: auto;
+    border: 1px solid grey;
   }
+}
+#handlebtn{
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 .features h2,
 .contact h2 {

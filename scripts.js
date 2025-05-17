@@ -1,3 +1,20 @@
+// Adding hover effects
+const navLinks = document.querySelectorAll("nav a");
+
+// Loop through each link and add event listeners for hover effects
+navLinks.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    link.style.backgroundColor = "#555";
+    link.style.padding = "10px 15px";
+    link.style.borderRadius = "5px";
+  });
+
+  link.addEventListener("mouseout", () => {
+    link.style.backgroundColor = "transparent";
+    link.style.padding = "0";
+  });
+});
+
 // Handling the get started button
 function handleGetStarted() {
   alert("Welcome to Jay's official web Company, We will be in touch soon");
@@ -18,4 +35,28 @@ form.addEventListener("submit", function (me) {
       `Hello ${name} you're welcome to Jay's Official Webpage and will attend to your message: "${message}" soon`
     );
   }
+});
+
+const handlebtn = document.getElementById("handlebtn");
+
+handlebtn.addEventListener("mouseover", () => {
+  handlebtn.style.background = "#555";
+  handlebtn.style.color = "#fff";
+});
+handlebtn.addEventListener("mouseout", () => {
+  handlebtn.style.background = "";
+  handlebtn.style.padding = "";
+  handlebtn.style.color = "#000";
+});
+
+const sendBtn = document.getElementById("sendBtn");
+
+sendBtn.addEventListener("mouseover", () => {
+  sendBtn.style.background = "#555";
+  sendBtn.style.color = "#fff";
+});
+
+sendBtn.addEventListener("mouseout", () => {
+  sendBtn.style.background = "";
+  sendBtn.style.color = "#000";
 });
