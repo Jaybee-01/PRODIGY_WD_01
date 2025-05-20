@@ -1,4 +1,4 @@
-// Adding hover effects
+// Adding hover effects to the navigation links
 const navLinks = document.querySelectorAll("nav a");
 
 // Loop through each link and add event listeners for hover effects
@@ -17,7 +17,7 @@ navLinks.forEach((link) => {
 
 // Handling the get started button
 function handleGetStarted() {
-  alert("Welcome to Jay's official web Company, We will be in touch soon");
+  alert("Welcome to Tech savy official webpage, We will be in touch soon");
 }
 
 // Handling the form section
@@ -32,10 +32,11 @@ form.addEventListener("submit", function (me) {
     alert("Please all fields needs to be filled");
   } else {
     alert(
-      `Hello ${name} you're welcome to Jay's Official Webpage and will attend to your message: "${message}" soon`
+      `Hello ${name} you're welcome to Tech savy Official Webpage and will attend to your message: "${message}" soon`
     );
   }
 });
+
 
 const handlebtn = document.getElementById("handlebtn");
 
