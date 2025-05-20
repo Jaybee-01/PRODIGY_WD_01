@@ -37,7 +37,6 @@ form.addEventListener("submit", function (me) {
   }
 });
 
-
 const handlebtn = document.getElementById("handlebtn");
 
 handlebtn.addEventListener("mouseover", () => {
@@ -60,4 +59,13 @@ sendBtn.addEventListener("mouseover", () => {
 sendBtn.addEventListener("mouseout", () => {
   sendBtn.style.background = "";
   sendBtn.style.color = "#000";
+});
+
+// for the hamburger menu
+const hamburger = document.getElementById("hamburger");
+const mobile = document.getElementById("mobile-menu");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("active");
+  mobile.classList.toggle("show");
 });

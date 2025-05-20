@@ -3,19 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jay's Landing Page</title>
+    <title>Tech Savy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>Tech Savy</h1>
+      <h1>Tech Savy</h1> 
       <nav>
         <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">About</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
         <a href="#contactForm">Contact</a>
       </nav>
+      <div id="hamburger">
+        <i class="fa-solid fa-bars" id="menu-open"></i>
+        <i class="fa-solid fa-xmark" id="menu-close"></i>
+      </div>
     </header>
+    <div id="mobile-menu" class="close">
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contactForm">Contact</a>
+    </div>
 
     <section class="hero">
       <h2>Welcome to Tech Savy Official Web Company</h2>
@@ -23,7 +37,7 @@
       <button onclick="handleGetStarted()" id="handlebtn">Get Started</button>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
       <h2>Our Features</h2>
       <ul>
         <li>Responsive Design</li>
@@ -61,7 +75,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Jay's Company. &copy; All rights reserved.</p>
+      <p>&copy; 2025 Tech Savy.</p>
     </footer>
 
     <script src="./scripts.js"></script>
